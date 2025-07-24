@@ -1,0 +1,767 @@
+Region,Year,Month,Rainfall (mm)
+Uttar Pradesh,2022,December,748.6
+Agra,2022,December,520.4
+Aligarh,2022,December,612.7
+Ambedkar Nagar,2022,December,845.3
+Amethi,2022,December,798.2
+Amroha,2022,December,689.5
+Auraiya,2022,December,732.1
+Ayodhya,2022,December,810.6
+Azamgarh,2022,December,856.4
+Baghpat,2022,December,478.2
+Bahraich,2022,December,912.3
+Ballia,2022,December,890.7
+Balrampur,2022,December,934.5
+Banda,2022,December,765.8
+Barabanki,2022,December,823.9
+Bareilly,2022,December,702.6
+Basti,2022,December,845.0
+Bhadohi,2022,December,812.4
+Bijnor,2022,December,730.2
+Budaun,2022,December,688.3
+Bulandshahr,2022,December,645.7
+Chandauli,2022,December,870.1
+Chitrakoot,2022,December,754.6
+Deoria,2022,December,878.9
+Etah,2022,December,610.5
+Etawah,2022,December,695.4
+Farrukhabad,2022,December,702.0
+Fatehpur,2022,December,748.8
+Firozabad,2022,December,632.7
+Gautam Buddha Nagar,2022,December,598.3
+Ghaziabad,2022,December,610.2
+Ghazipur,2022,December,865.5
+Gonda,2022,December,889.6
+Gorakhpur,2022,December,902.4
+Hamirpur,2022,December,742.1
+Hapur,2022,December,620.9
+Hardoi,2022,December,735.0
+Hathras,2022,December,598.7
+Jalaun,2022,December,710.3
+Jaunpur,2022,December,840.2
+Jhansi,2022,December,688.5
+Kannauj,2022,December,725.4
+Kanpur Dehat,2022,December,738.6
+Kanpur Nagar,2022,December,745.2
+Kasganj,2022,December,605.9
+Kaushambi,2022,December,768.0
+Kheri,2022,December,910.7
+Kushinagar,2022,December,882.3
+Lalitpur,2022,December,695.1
+Lucknow,2022,December,790.4
+Maharajganj,2022,December,898.6
+Mahoba,2022,December,720.8
+Mainpuri,2022,December,670.2
+Mathura,2022,December,590.6
+Mau,2022,December,850.9
+Meerut,2022,December,640.3
+Mirzapur,2022,December,812.7
+Moradabad,2022,December,700.5
+Muzaffarnagar,2022,December,658.9
+Pilibhit,2022,December,880.2
+Pratapgarh,2022,December,775.6
+Prayagraj,2022,December,760.3
+Raebareli,2022,December,782.4
+Rampur,2022,December,715.7
+Saharanpur,2022,December,670.8
+Sambhal,2022,December,690.1
+Sant Kabir Nagar,2022,December,840.0
+Shahjahanpur,2022,December,725.9
+Shamli,2022,December,610.4
+Shravasti,2022,December,920.5
+Siddharthnagar,2022,December,895.3
+Sitapur,2022,December,845.7
+Sonbhadra,2022,December,830.6
+Sultanpur,2022,December,800.2
+Unnao,2022,December,755.0
+Varanasi,2022,December,860.1
+Maharashtra,2022,December,921.2
+Ahmednagar,2022,December,650.3
+Akola,2022,December,850.7
+Amravati,2022,December,900.5
+Aurangabad,2022,December,610.5
+Beed,2022,December,580.2
+Bhandara,2022,December,1200.3
+Buldhana,2022,December,770.4
+Chandrapur,2022,December,1100.6
+Dhule,2022,December,690.8
+Gadchiroli,2022,December,1300.9
+Gondia,2022,December,1250.7
+Hingoli,2022,December,720.5
+Jalgaon,2022,December,695.4
+Jalna,2022,December,680.2
+Kolhapur,2022,December,2105.8
+Latur,2022,December,640.3
+Mumbai City,2022,December,2345.6
+Mumbai Suburban,2022,December,2480.3
+Nagpur,2022,December,1145.2
+Nanded,2022,December,750.6
+Nandurbar,2022,December,670.4
+Nashik,2022,December,850.7
+Osmanabad,2022,December,630.5
+Palghar,2022,December,2200.8
+Parbhani,2022,December,710.2
+Pune,2022,December,700.4
+Raigad,2022,December,2800.9
+Ratnagiri,2022,December,3250.1
+Sangli,2022,December,950.3
+Satara,2022,December,980.7
+Sindhudurg,2022,December,3605.9
+Solapur,2022,December,690.6
+Thane,2022,December,2400.2
+Wardha,2022,December,880.4
+Washim,2022,December,760.5
+Yavatmal,2022,December,820.3
+Bihar,2022,December,896.2
+Araria,2022,December,1120.5
+Arwal,2022,December,850.3
+Aurangabad,2022,December,870.6
+Banka,2022,December,920.4
+Begusarai,2022,December,890.2
+Bhagalpur,2022,December,910.7
+Bhojpur,2022,December,880.5
+Buxar,2022,December,860.1
+Darbhanga,2022,December,980.3
+East Champaran,2022,December,1005.6
+Gaya,2022,December,895.4
+Gopalganj,2022,December,970.2
+Jamui,2022,December,915.8
+Jehanabad,2022,December,875.9
+Kaimur,2022,December,860.7
+Katihar,2022,December,1020.3
+Khagaria,2022,December,940.5
+Kishanganj,2022,December,1100.2
+Lakhisarai,2022,December,880.6
+Madhepura,2022,December,950.4
+Madhubani,2022,December,990.1
+Munger,2022,December,905.7
+Muzaffarpur,2022,December,960.3
+Nalanda,2022,December,885.2
+Nawada,2022,December,870.8
+Patna,2022,December,890.5
+Purnia,2022,December,1050.6
+Rohtas,2022,December,880.9
+Saharsa,2022,December,940.3
+Samastipur,2022,December,920.7
+Saran,2022,December,950.2
+Sheikhpura,2022,December,870.5
+Sheohar,2022,December,980.6
+Sitamarhi,2022,December,990.4
+Siwan,2022,December,960.1
+Supaul,2022,December,970.8
+Vaishali,2022,December,910.2
+West Champaran,2022,December,995.3
+West Bengal,2022,December,1760.4
+Alipurduar,2022,December,2450.3
+Bankura,2022,December,1320.5
+Birbhum,2022,December,1285.7
+Cooch Behar,2022,December,2380.6
+Dakshin Dinajpur,2022,December,1420.8
+Darjeeling,2022,December,2600.9
+Hooghly,2022,December,1500.2
+Howrah,2022,December,1485.3
+Jalpaiguri,2022,December,2550.7
+Jhargram,2022,December,1350.4
+Kalimpong,2022,December,2400.6
+Kolkata,2022,December,1600.5
+Malda,2022,December,1450.1
+Murshidabad,2022,December,1380.9
+Nadia,2022,December,1425.6
+North 24 Parganas,2022,December,1550.3
+Paschim Bardhaman,2022,December,1300.7
+Paschim Medinipur,2022,December,1375.2
+Purba Bardhaman,2022,December,1330.5
+Purba Medinipur,2022,December,1400.8
+Purulia,2022,December,1250.9
+South 24 Parganas,2022,December,1500.4
+Uttar Dinajpur,2022,December,1480.6
+Madhya Pradesh,2022,December,1095.4
+Agar Malwa,2022,December,1020.3
+Alirajpur,2022,December,1150.7
+Anuppur,2022,December,1250.5
+Ashoknagar,2022,December,980.2
+Balaghat,2022,December,1532.3
+Barwani,2022,December,1100.6
+Betul,2022,December,1205.8
+Bhind,2022,December,563.5
+Bhopal,2022,December,1120.4
+Burhanpur,2022,December,1085.3
+Chhatarpur,2022,December,950.1
+Chhindwara,2022,December,1300.7
+Damoh,2022,December,980.5
+Datia,2022,December,870.2
+Dewas,2022,December,1025.6
+Dhar,2022,December,1050.9
+Dindori,2022,December,1280.4
+Guna,2022,December,940.3
+Gwalior,2022,December,600.7
+Harda,2022,December,1180.2
+Hoshangabad,2022,December,1249.6
+Indore,2022,December,1105.5
+Jabalpur,2022,December,1220.3
+Jhabua,2022,December,1070.4
+Katni,2022,December,1155.6
+Khandwa,2022,December,1090.7
+Khargone,2022,December,590.8
+Mandla,2022,December,1275.9
+Mandsaur,2022,December,980.6
+Morena,2022,December,610.2
+Narsinghpur,2022,December,1190.5
+Neemuch,2022,December,605.3
+Panna,2022,December,970.4
+Raisen,2022,December,1055.7
+Rajgarh,2022,December,990.6
+Ratlam,2022,December,1020.8
+Rewa,2022,December,1100.9
+Sagar,2022,December,1005.2
+Satna,2022,December,1080.3
+Sehore,2022,December,1075.4
+Seoni,2022,December,1255.6
+Shahdol,2022,December,1170.7
+Shajapur,2022,December,1010.5
+Sheopur,2022,December,920.6
+Shivpuri,2022,December,950.8
+Sidhi,2022,December,1120.9
+Singrauli,2022,December,1155.2
+Tikamgarh,2022,December,940.3
+Ujjain,2022,December,1030.4
+Umaria,2022,December,1185.5
+Vidisha,2022,December,990.6
+Tamil Nadu,2022,December,118.8
+Ariyalur,2022,December,113.2
+Chengalpattu,2022,December,46.5
+Chennai,2022,December,64.8
+Coimbatore,2022,December,167.1
+Cuddalore,2022,December,143.9
+Dharmapuri,2022,December,78.2
+Dindigul,2022,December,131.3
+Erode,2022,December,129.6
+Kallakurichi,2022,December,147.5
+Kancheepuram,2022,December,21.1
+Kanyakumari,2022,December,293.8
+Karur,2022,December,92.0
+Krishnagiri,2022,December,89.2
+Madurai,2022,December,116.4
+Mayiladuthurai,2022,December,142.9
+Nagapattinam,2022,December,129.4
+Namakkal,2022,December,92.0
+Nilgiris,2022,December,194.0
+Perambalur,2022,December,61.7
+Pudukkottai,2022,December,88.2
+Ramanathapuram,2022,December,171.5
+Ranipet,2022,December,18.4
+Salem,2022,December,90.4
+Sivaganga,2022,December,133.6
+Tenkasi,2022,December,199.8
+Thanjavur,2022,December,127.6
+Theni,2022,December,156.2
+Tirunelveli,2022,December,273.4
+Tirupattur,2022,December,48.7
+Tiruppur,2022,December,116.5
+Tiruvallur,2022,December,48.3
+Tiruvannamalai,2022,December,54.8
+Tiruvarur,2022,December,193.8
+Toothukudi,2022,December,143.2
+Trichy,2022,December,72.7
+Vellore,2022,December,48.6
+Villupuram,2022,December,68.6
+Virudhunagar,2022,December,159.2
+Rajasthan,2022,December,596.1
+Ajmer,2022,December,573.1
+Alwar,2022,December,615.8
+Banswara,2022,December,998.3
+Baran,2022,December,1049.2
+Bharatpur,2022,December,572.7
+Bhilwara,2022,December,675.2
+Bundi,2022,December,920.5
+Chittorgarh,2022,December,785.8
+Dausa,2022,December,784.2
+Dholpur,2022,December,696.3
+Dungarpur,2022,December,829.5
+Jaipur,2022,December,652.8
+Jhalawar,2022,December,1317.1
+Jhunjhunu,2022,December,406.5
+Karauli,2022,December,582.0
+Kota,2022,December,1150.8
+Pratapgarh,2022,December,1129.6
+Rajsamand,2022,December,617.0
+Sawai Madhopur,2022,December,749.0
+Sikar,2022,December,490.4
+Sirohi,2022,December,1074.7
+Tonk,2022,December,802.4
+Udaipur,2022,December,889.5
+Barmer,2022,December,476.0
+Bikaner,2022,December,437.4
+Churu,2022,December,508.7
+Hanumangarh,2022,December,317.9
+Jaisalmer,2022,December,346.7
+Jalore,2022,December,626.4
+Jodhpur,2022,December,457.5
+Nagaur,2022,December,510.8
+Pali,2022,December,540.6
+Sri Ganganagar,2022,December,400.5
+Gujarat,2022,December,850.2
+Ahmedabad,2022,December,920.5
+Amreli,2022,December,870.3
+Anand,2022,December,890.7
+Aravalli,2022,December,910.2
+Banaskantha,2022,December,950.6
+Bharuch,2022,December,880.4
+Bhavnagar,2022,December,860.9
+Botad,2022,December,845.3
+Chhota Udaipur,2022,December,930.1
+Dahod,2022,December,940.8
+Dang,2022,December,980.2
+Devbhoomi Dwarka,2022,December,810.5
+Gandhinagar,2022,December,915.6
+Gir Somnath,2022,December,870.7
+Jamnagar,2022,December,820.3
+Junagadh,2022,December,860.9
+Kheda,2022,December,890.4
+Kutch,2022,December,780.2
+Mahisagar,2022,December,910.6
+Mehsana,2022,December,900.3
+Morbi,2022,December,830.7
+Narmada,2022,December,940.5
+Navsari,2022,December,970.8
+Panchmahal,2022,December,920.1
+Patan,2022,December,890.6
+Porbandar,2022,December,800.4
+Rajkot,2022,December,850.9
+Sabarkantha,2022,December,910.2
+Surat,2022,December,960.7
+Surendranagar,2022,December,870.5
+Tapi,2022,December,950.3
+Vadodara,2022,December,930.6
+Valsad,2022,December,980.1
+Karnataka,2022,December,1019.0
+Bagalkot,2022,December,850.2
+Ballari,2022,December,920.5
+Belagavi,2022,December,1100.3
+Bengaluru Rural,2022,December,980.7
+Bengaluru Urban,2022,December,1025.6
+Bidar,2022,December,970.4
+Chamarajanagar,2022,December,950.1
+Chikkaballapur,2022,December,890.6
+Chikkamagaluru,2022,December,1150.9
+Chitradurga,2022,December,860.3
+Dakshina Kannada,2022,December,3245.2
+Davanagere,2022,December,930.5
+Dharwad,2022,December,1010.8
+Gadag,2022,December,870.7
+Hassan,2022,December,980.2
+Haveri,2022,December,940.6
+Kalaburagi,2022,December,900.4
+Kodagu,2022,December,1200.9
+Kolar,2022,December,880.3
+Koppal,2022,December,910.6
+Mandya,2022,December,950.2
+Mysuru,2022,December,970.5
+Raichur,2022,December,890.7
+Ramanagara,2022,December,920.1
+Shivamogga,2022,December,1100.6
+Tumakuru,2022,December,940.3
+Udupi,2022,December,3100.8
+Uttara Kannada,2022,December,2900.4
+Vijayapura,2022,December,870.9
+Yadgir,2022,December,880.2
+Andhra Pradesh,2022,December,850.3
+Anantapur,2022,December,720.5
+Chittoor,2022,December,810.2
+East Godavari,2022,December,930.7
+Guntur,2022,December,890.4
+Kadapa,2022,December,780.6
+Krishna,2022,December,910.3
+Kurnool,2022,December,850.9
+Nellore,2022,December,870.2
+Prakasam,2022,December,800.5
+Srikakulam,2022,December,950.1
+Visakhapatnam,2022,December,970.8
+Vizianagaram,2022,December,940.6
+West Godavari,2022,December,920.4
+Odisha,2022,December,1150.0
+Angul,2022,December,1120.5
+Balangir,2022,December,980.3
+Balasore,2022,December,1250.7
+Bargarh,2022,December,1020.4
+Bhadrak,2022,December,950.6
+Boudh,2022,December,1180.9
+Cuttack,2022,December,1230.2
+Deogarh,2022,December,990.8
+Dhenkanal,2022,December,1100.3
+Gajapati,2022,December,1155.6
+Ganjam,2022,December,1200.4
+Jagatsinghpur,2022,December,1175.2
+Jajpur,2022,December,1190.5
+Jharsuguda,2022,December,1050.7
+Kalahandi,2022,December,1130.9
+Kandhamal,2022,December,1210.6
+Kendrapara,2022,December,1160.3
+Keonjhar,2022,December,1095.4
+Khordha,2022,December,1185.7
+Koraput,2022,December,1220.1
+Malkangiri,2022,December,1245.8
+Mayurbhanj,2022,December,970.2
+Nabarangpur,2022,December,1170.6
+Nayagarh,2022,December,1125.9
+Nuapada,2022,December,1080.4
+Puri,2022,December,1150.7
+Rayagada,2022,December,1195.3
+Sambalpur,2022,December,980.6
+Sonepur,2022,December,1025.4
+Sundargarh,2022,December,950.8
+Telangana,2022,December,810.3
+Adilabad,2022,December,725.4
+Kumuram Bheem Asifabad,2022,December,700.6
+Mancherial,2022,December,750.8
+Nirmal,2022,December,740.2
+Nizamabad,2022,December,690.5
+Jagtial,2022,December,710.3
+Peddapalli,2022,December,730.9
+Kamareddy,2022,December,720.7
+Rajanna Sircilla,2022,December,715.8
+Karimnagar,2022,December,705.1
+Jayashankar Bhupalpally,2022,December,760.4
+Sangareddy,2022,December,800.0
+Medak,2022,December,780.2
+Siddipet,2022,December,760.5
+Jangaon,2022,December,745.9
+Hanumakonda,2022,December,780.1
+Warangal,2022,December,790.6
+Mulugu,2022,December,830.7
+Bhadradri Kothagudem,2022,December,950.3
+Khammam,2022,December,985.4
+Mahabubabad,2022,December,820.8
+Suryapet,2022,December,680.2
+Nalgonda,2022,December,670.5
+Yadadri Bhuvanagiri,2022,December,720.6
+Medchal–Malkajgiri,2022,December,1050.2
+Hyderabad,2022,December,1020.3
+Ranga Reddy,2022,December,725.4
+Vikarabad,2022,December,930.6
+Narayanpet,2022,December,710.2
+Mahabubnagar,2022,December,850.7
+Nagarkurnool,2022,December,860.1
+Wanaparthy,2022,December,780.9
+Jogulamba Gadwal,2022,December,740.5
+Kerala,2022,December,1170.0
+Thiruvananthapuram,2022,December,1400.2
+Kollam,2022,December,1550.3
+Pathanamthitta,2022,December,1600.4
+Alappuzha,2022,December,1500.1
+Kottayam,2022,December,1650.7
+Idukki,2022,December,1300.5
+Ernakulam,2022,December,1200.6
+Thrissur,2022,December,1150.2
+Palakkad,2022,December,900.3
+Malappuram,2022,December,1000.9
+Kozhikode,2022,December,1100.8
+Wayanad,2022,December,1250.7
+Kannur,2022,December,1350.6
+Kasaragod,2022,December,1450.4
+Jharkhand,2022,December,1050.0
+Bokaro,2022,December,950.4
+Chatra,2022,December,900.2
+Deoghar,2022,December,1005.5
+Dhanbad,2022,December,920.3
+Dumka,2022,December,890.1
+East Singhbhum,2022,December,1250.6
+Garhwa,2022,December,880.4
+Giridih,2022,December,995.2
+Godda,2022,December,1020.7
+Gumla,2022,December,970.2
+Hazaribagh,2022,December,900.5
+Jamtara,2022,December,910.3
+Khunti,2022,December,880.7
+Koderma,2022,December,915.8
+Latehar,2022,December,930.1
+Lohardaga,2022,December,940.2
+Pakur,2022,December,1200.9
+Palamu,2022,December,980.6
+Ramgarh,2022,December,895.4
+Ranchi,2022,December,1055.3
+Sahibganj,2022,December,1105.7
+Seraikela Kharsawan,2022,December,970.8
+Simdega,2022,December,950.0
+West Singhbhum,2022,December,1000.2
+Assam,2022,December,1560.2
+Baksa,2022,December,1510.4
+Bajali,2022,December,1540.3
+Barpeta,2022,December,1580.5
+Biswanath,2022,December,1600.2
+Bongaigaon,2022,December,1520.6
+Cachar,2022,December,1420.7
+Charaideo,2022,December,1590.4
+Chirang,2022,December,1505.3
+Darrang,2022,December,1550.8
+Dhemaji,2022,December,1690.1
+Dhubri,2022,December,1620.9
+Dibrugarh,2022,December,2050.3
+Dima Hasao,2022,December,1290.5
+Goalpara,2022,December,1580.1
+Golaghat,2022,December,2000.2
+Hailakandi,2022,December,1480.4
+Hojai,2022,December,1530.7
+Jorhat,2022,December,2080.5
+Kamrup Metropolitan,2022,December,1600.2
+Kamrup,2022,December,1585.6
+Karbi Anglong,2022,December,1450.3
+Karimganj,2022,December,1380.5
+Kokrajhar,2022,December,1525.6
+Lakhimpur,2022,December,1650.4
+Majuli,2022,December,1700.3
+Morigaon,2022,December,1550.4
+Nagaon,2022,December,1620.7
+Nalbari,2022,December,1500.6
+Sivasagar,2022,December,1980.2
+Sonitpur,2022,December,1605.1
+South Salmara-Mankachar,2022,December,1485.3
+Tamulpur,2022,December,1550.8
+Tinsukia,2022,December,2100.6
+Udalguri,2022,December,1525.5
+West Karbi Anglong,2022,December,1400.4
+Chhattisgarh,2022,December,1125.4
+Raipur,2022,December,1220.5
+Durg,2022,December,1185.3
+Bilaspur,2022,December,1405.7
+Korba,2022,December,1100.2
+Raigarh,2022,December,1055.4
+Janjgir-Champa,2022,December,1150.1
+Baloda Bazar,2022,December,1250.6
+Bemetara,2022,December,1000.3
+Dhamtari,2022,December,1108.2
+Mahasamund,2022,December,1175.9
+Gariaband,2022,December,1110.7
+Kanker,2022,December,920.4
+Kondagaon,2022,December,950.6
+Narayanpur,2022,December,980.5
+Bastar,2022,December,880.3
+Bijapur,2022,December,850.2
+Dantewada,2022,December,800.1
+Sukma,2022,December,825.6
+Balrampur,2022,December,910.4
+Surguja,2022,December,945.2
+Koriya,2022,December,1010.8
+Surajpur,2022,December,980.1
+Jashpur,2022,December,1205.3
+Haryana,2022,December,650.4
+Ambala,2022,December,720.1
+Bhiwani,2022,December,540.3
+Charkhi Dadri,2022,December,580.7
+Faridabad,2022,December,700.2
+Fatehabad,2022,December,530.6
+Gurugram,2022,December,680.4
+Hisar,2022,December,610.8
+Jhajjar,2022,December,600.5
+Jind,2022,December,650.9
+Kaithal,2022,December,670.3
+Karnal,2022,December,690.2
+Kurukshetra,2022,December,700.6
+Mahendragarh,2022,December,550.1
+Nuh,2022,December,570.4
+Palwal,2022,December,720.8
+Panchkula,2022,December,730.5
+Panipat,2022,December,680.9
+Rewari,2022,December,590.2
+Rohtak,2022,December,640.7
+Sirsa,2022,December,510.4
+Sonipat,2022,December,660.3
+Yamunanagar,2022,December,710.6
+Uttarakhand,2022,December,1160.3
+Almora,2022,December,1240.8
+Bageshwar,2022,December,1320.4
+Chamoli,2022,December,1185.6
+Champawat,2022,December,1120.7
+Dehradun,2022,December,940.2
+Haridwar,2022,December,825.3
+Nainital,2022,December,1015.5
+Pauri Garhwal,2022,December,1080.6
+Pithoragarh,2022,December,1425.8
+Rudraprayag,2022,December,900.1
+Tehri Garhwal,2022,December,995.2
+Udham Singh Nagar,2022,December,820.4
+Uttarkashi,2022,December,1075.9
+Himachal Pradesh,2022,December,1150.7
+Bilaspur,2022,December,810.4
+Chamba,2022,December,1105.8
+Hamirpur,2022,December,895.2
+Kangra,2022,December,1250.6
+Kinnaur,2022,December,820.3
+Kullu,2022,December,1120.9
+Lahaul & Spiti,2022,December,210.5
+Mandi,2022,December,1080.4
+Shimla,2022,December,1305.7
+Sirmaur,2022,December,930.2
+Solan,2022,December,920.8
+Una,2022,December,700.6
+Tripura,2022,December,1845.2
+West Tripura,2022,December,1820.3
+South Tripura,2022,December,1680.5
+North Tripura,2022,December,1745.6
+Dhalai,2022,December,1520.4
+Khowai,2022,December,1605.7
+Gomati,2022,December,1702.8
+Unakoti,2022,December,1580.1
+Sipahijala,2022,December,1665.9
+Arunachal Pradesh,2022,December,1750.3
+Tawang,2022,December,1420.7
+West Kameng,2022,December,1585.4
+East Kameng,2022,December,1620.8
+Papum Pare,2022,December,1705.1
+Kurung Kumey,2022,December,1802.6
+Upper Subansiri,2022,December,1720.9
+West Siang,2022,December,1685.3
+East Siang,2022,December,1740.2
+Siang,2022,December,1768.5
+Upper Siang,2022,December,1820.7
+Lower Siang,2022,December,1690.4
+Lower Subansiri,2022,December,1735.8
+Namsai,2022,December,1602.1
+Changlang,2022,December,1785.6
+Tirap,2022,December,1742.9
+Lohit,2022,December,1708.3
+Dibang Valley,2022,December,1905.2
+Lower Dibang Valley,2022,December,1860.7
+Anjaw,2022,December,1802.4
+Lepa Rada,2022,December,1655.8
+Shi Yomi,2022,December,1758.1
+Kamle,2022,December,1725.9
+Shi Yomi,2022,December,1758.1
+Lepa Rada,2022,December,1655.8
+Kamle,2022,December,1725.9
+Pakke Kessang,2022,December,1682.4
+Kamle,2022,December,1725.9
+Namsai,2022,December,1602.1
+Pakke Kessang,2022,December,1682.4
+Goa,2022,December,1450.7
+North Goa,2022,December,1400.5
+South Goa,2022,December,1500.9
+Manipur,2022,December,1405.8
+Bishnupur,2022,December,1350.4
+Chandel,2022,December,1502.7
+Churachandpur,2022,December,1425.3
+Imphal East,2022,December,1305.6
+Imphal West,2022,December,1280.9
+Jiribam,2022,December,1450.2
+Kakching,2022,December,1320.8
+Kamjong,2022,December,1550.1
+Kangpokpi,2022,December,1385.7
+Noney,2022,December,1480.6
+Pherzawl,2022,December,1525.4
+Senapati,2022,December,1408.3
+Tamenglong,2022,December,1470.5
+Tengnoupal,2022,December,1505.9
+Thoubal,2022,December,1330.7
+Ukhrul,2022,December,1495.8
+Meghalaya,2022,December,2105.4
+East Garo Hills,2022,December,2150.3
+West Garo Hills,2022,December,2005.7
+South Garo Hills,2022,December,2080.6
+North Garo Hills,2022,December,2125.1
+East Khasi Hills,2022,December,2300.8
+West Khasi Hills,2022,December,2205.2
+Ri Bhoi,2022,December,2250.4
+East Jaintia Hills,2022,December,2180.9
+West Jaintia Hills,2022,December,2195.6
+South West Khasi Hills,2022,December,2160.2
+North West Garo Hills,2022,December,2045.3
+South West Garo Hills,2022,December,2075.5
+Mizoram,2022,December,1920.7
+Aizawl,2022,December,1850.4
+Champhai,2022,December,2005.6
+Hnahthial,2022,December,1950.3
+Khawzawl,2022,December,1905.8
+Kolasib,2022,December,1880.9
+Lawngtlai,2022,December,1985.2
+Lunglei,2022,December,1905.7
+Mamit,2022,December,1930.1
+Saiha,2022,December,1805.4
+Serchhip,2022,December,1875.6
+Saitual,2022,December,1840.8
+Nagaland,2022,December,1605.2
+Dimapur,2022,December,1550.9
+Kiphire,2022,December,1650.3
+Kohima,2022,December,1585.7
+Longleng,2022,December,1600.4
+Mokokchung,2022,December,1625.1
+Mon,2022,December,1700.5
+Peren,2022,December,1590.6
+Phek,2022,December,1615.8
+Tuensang,2022,December,1685.2
+Wokha,2022,December,1575.9
+Zunheboto,2022,December,1540.3
+Punjab,2022,December,660.5
+Amritsar,2022,December,675.2
+Barnala,2022,December,650.3
+Bathinda,2022,December,630.7
+Faridkot,2022,December,645.1
+Fatehgarh Sahib,2022,December,660.8
+Firozpur,2022,December,620.4
+Gurdaspur,2022,December,680.9
+Hoshiarpur,2022,December,700.2
+Jalandhar,2022,December,690.5
+Kapurthala,2022,December,685.7
+Ludhiana,2022,December,675.9
+Mansa,2022,December,635.6
+Moga,2022,December,640.8
+Patiala,2022,December,670.3
+Rupnagar,2022,December,690.0
+Sangrur,2022,December,660.7
+Shaheed Bhagat Singh Nagar,2022,December,655.4
+Sahibzada Ajit Singh Nagar (Mohali),2022,December,665.8
+Sri Muktsar Sahib,2022,December,625.9
+Tarn Taran,2022,December,680.1
+Barnala,2022,December,650.3
+Patiala,2022,December,670.3
+Sikkim,2022,December,2150.6
+East Sikkim,2022,December,2300.4
+North Sikkim,2022,December,1950.7
+South Sikkim,2022,December,2205.9
+West Sikkim,2022,December,2050.2
+Andaman and Nicobar Islands,2022,December,2750.8
+Nicobar,2022,December,2805.1
+North and Middle Andaman,2022,December,2650.3
+South Andaman,2022,December,2900.6
+Chandigarh,2022,December,685.2
+Delhi,2022,December,580.4
+Central Delhi,2022,December,575.2
+East Delhi,2022,December,590.3
+New Delhi,2022,December,600.1
+North Delhi,2022,December,570.5
+North East Delhi,2022,December,585.6
+North West Delhi,2022,December,565.7
+Shahdara,2022,December,595.8
+South Delhi,2022,December,580.6
+South East Delhi,2022,December,585.4
+South West Delhi,2022,December,575.9
+West Delhi,2022,December,560.2
+Jammu and Kashmir,2022,December,720.8
+Anantnag,2022,December,805.3
+Bandipora,2022,December,790.5
+Baramulla,2022,December,820.4
+Budgam,2022,December,780.7
+Doda,2022,December,650.2
+Ganderbal,2022,December,760.6
+Jammu,2022,December,680.9
+Kathua,2022,December,700.3
+Kishtwar,2022,December,630.8
+Kulgam,2022,December,810.1
+Kupwara,2022,December,815.2
+Poonch,2022,December,730.6
+Pulwama,2022,December,780.4
+Rajouri,2022,December,710.7
+Ramban,2022,December,755.9
+Reasi,2022,December,695.3
+Samba,2022,December,670.5
+Shopian,2022,December,800.8
+Srinagar,2022,December,790.2
+Udhampur,2022,December,720.1
+Ladakh,2022,December,210.5
+Leh,2022,December,220.3
+Kargil,2022,December,200.7
+Lakshadweep,2022,December,1500.8
+Puducherry,2022,December,900.2
+Puducherry District,2022,December,920.5
+Karaikal,2022,December,880.4
+Mahe,2022,December,950.7
+Yanam,2022,December,890.3

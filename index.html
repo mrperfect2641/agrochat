@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="csrf-token" content="{{ csrf_token() }}">
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <title>AgroChat</title>
+</head>
+<body>
+    <body onload="checkFirstVisit()">
+
+    <header>
+        <div class="logo-placeholder">
+            <a href="index.html"><img src="logo.svg" alt="AgroChat Logo"> </a>
+        </div>
+        <div class="header-controls">
+            <button class="contact-btn"><a href="index.html">HOME</a></button>
+            <!-- <a href="mailto:info@myperfectsolution.in" class="contact-btn">CONTACT EXPERT</a> -->
+             <button class="contact-btn"><a href="weather.html">WEATHER-MAP</a></button>
+            <button class="contact-btn" onclick="openContactForm()">CONTACT EXPERT</button>
+            <div class="user-controls">
+                <button id="login-btn" class="auth-btn" onclick="showAuthModal()">LOGIN</button>
+                <div class="profile-dropdown" id="profile-dropdown" style="display: none;">
+                    <button class="profile-btn">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#4CAF50" stroke-width="2">
+                            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                            <circle cx="12" cy="7" r="4"></circle>
+                        </svg>
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="dashboard.html" onclick="showProfile()">View Profile</a>
+                        <a href="#" onclick="logout()">Logout</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="main-container">
+        <div class="content-box">
+            <div class="text-content">
+                <h2>Improving the Speed and Efficiency of Agricultural Extension with AI</h2>
+                <p>
+                    Farmer Chat is designed to deliver tailored assistance to hundreds of thousands 
+                    of extension workers providing advice to tens of millions of small-scale farmers 
+                    around the world. <br>
+                    <span class="green-p">Use ./cityname for live Weather</span>
+                </p>
+                 <!-- <h3>Available Crops Data for these Regions:</h3> -->
+                <div class="warning-strip">
+                  <span class="warning-text">• Real-time Weather condition • Rainfall Data for all Districts • Best crops for perticular Districts</span>
+                </div>
+            </div>
+            <div class="chat-container">
+                <div class="chat-header">Farmer Chat</div>
+                <div class="chat-messages" id="chat-messages"></div>
+                <div class="chat-input">
+                    <input type="text" id="user-input" placeholder="Ask your query here..." onkeypress="handleKeyPress(event)">
+                    <button onclick="sendMessage()">Send</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="auth-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeAuthModal()">&times;</span>
+            <div class="auth-tabs">
+                <button class="tab active" onclick="switchTab('login')">Login</button>
+                <button class="tab" onclick="switchTab('register')">Register</button>
+            </div>
+            <form id="login-form" class="auth-form">
+                <input type="text" placeholder="Username" required>
+                <input type="password" placeholder="Password" required minlength="8">
+                <button type="submit"> Login</button>
+            </form>
+            
+            <form id="register-form" class="auth-form" style="display: none;">
+                <input type="text" placeholder="Username" required>
+                <input type="email" placeholder="Email" required>
+                <input type="password" placeholder="Password (min 8 chars)" required minlength="8"
+                       pattern="^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*#?&])[A-Za-z\d@$!%*#?&]{8,}$">
+                <button type="submit">Register</button>
+            </form>
+            <div id="auth-message"></div>
+        </div>
+    </div>
+    <!-- Contact Popup Form -->
+<div id="contact-popup" class="contact-modal">
+  <div class="contact-modal-content">
+    <span class="close" onclick="closeContactForm()">&times;</span>
+    <h2 class="contact-title">Contact Us</h2>
+
+            <form id="contact-form" action="/contact" method="post">
+            <div class="form-row">
+                <input type="text" id="contact-name" name="name" placeholder="Your Name" required>
+                <input type="text" id="contact-phone" name="phone" placeholder="Phone Number" required pattern="^[0-9]{10}$">
+            </div>
+
+            <input type="email" id="contact-email" name="email" placeholder="Email" readonly>
+
+            <select id="contact-topic" name="subject" required>
+                <option value="" disabled selected>Select topic</option>
+                <option value="Crops related query">Crops related query</option>
+                <option value="Rainfall related query">Rainfall related query</option>
+                <option value="Want expert advice">Want expert advice</option>
+                <option value="Other question">other question</option>
+            </select>
+
+            <textarea id="contact-message" name="message" placeholder="Your message." rows="4" required></textarea>
+            <button type="submit">Send</button>
+            </form>
+  </div>
+</div>
+    <script src="script.js"></script>
+</body>
+</html>
+  

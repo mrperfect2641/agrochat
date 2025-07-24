@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Font Awesome for icons -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-pVIeM+X0x+9e1BZ+kFhyfTx+Nf2E5s+/qjz+zJRoTf2nC97Mb3C+MkR5RfkQArHtrpxYQVy+XbKXjVd+jrXK5Q=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+  <!-- Main stylesheet -->
+  <title>User Dashboard</title>
+
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+    }
+    /* ─── HEADER ───────────────────────────────────────────────────────────────── */
+    .dashboard-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 20px;
+      background: #4caf50;
+      color: #fff;
+    }
+    .dashboard-header .header-logo img {
+      height: 50px;
+    }
+    .dashboard-header .header-nav .btn {
+      background: #fff;
+      color: #4caf50;
+      border: none;
+      margin-left: 10px;
+      padding: 8px 16px;
+      border-radius: 4px;
+      cursor: pointer;
+      font-weight: bold;
+      text-transform: uppercase;
+      font-size: 0.9rem;
+      transition: background 0.2s;
+    }
+    .dashboard-header .header-nav .btn:hover {
+      background: #f1f1f1;
+    }
+
+    /* ─── LAYOUT ───────────────────────────────────────────────────────────────── */
+    .dashboard-main {
+      display: flex;
+      height: calc(100vh - 80px);
+    }
+    .dashboard-sidebar {
+      width: 220px;
+      background: #eef7ee;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      border-right: 1px solid #ddd;
+    }
+
+    /* ─── PROFILE WIDGET ───────────────────────────────────────────────────────── */
+    .profile-widget .avatar {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      background: #fff;
+      border: 3px solid #4caf50;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 10px;
+      overflow: hidden;
+    }
+    .profile-widget .avatar img {
+      width: 100%;
+    }
+    .profile-name {
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+
+    /* ─── SIDEBAR MENU ─────────────────────────────────────────────────────────── */
+    .sidebar-menu {
+      list-style: none;
+      width: 100%;
+      padding: 0;
+      margin: 0;
+    }
+    .sidebar-menu li {
+      margin-bottom: 10px;
+    }
+    .sidebar-menu button {
+      width: 100%;
+      text-align: left;
+      background: none;
+      border: none;
+      padding: 10px;
+      border-radius: 4px;
+      font-size: 0.9rem;
+      color: #333;
+      cursor: pointer;
+      transition: background 0.2s, color 0.2s;
+    }
+    .sidebar-menu button:hover,
+    .sidebar-menu button.active {
+      background: #4caf50;
+      color: #fff;
+    }
+
+    /* ─── CONTENT AREA ────────────────────────────────────────────────────────── */
+    .dashboard-content {
+      flex: 1;
+      padding: 30px;
+      overflow-y: auto;
+      background: #fafafa;
+    }
+    .content-panel {
+      display: none;
+    }
+    .content-panel.active {
+      display: block;
+    }
+    .content-panel h2 {
+      margin-bottom: 20px;
+      color: #4caf50;
+    }
+
+    /* ─── FORM GRID ───────────────────────────────────────────────────────────── */
+    .form-grid {
+      display: grid;
+      grid-template-columns: 150px 1fr;
+      gap: 12px 20px;
+      align-items: center;
+      margin-bottom: 24px;
+    }
+    .form-grid label {
+      font-weight: bold;
+      white-space: nowrap;
+    }
+    .form-grid input {
+      padding: 8px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      width: 100%;
+    }
+
+    /* ─── RESET PASSWORD ROW ──────────────────────────────────────────────────── */
+    .reset-row {
+      display: grid;
+      grid-template-columns:
+        150px       /* label */
+        repeat(3, 1fr) /* three inputs */
+        auto;       /* reset button */
+      gap: 12px 20px;
+      align-items: center;
+      margin-bottom: 30px;
+    }
+    .reset-row label {
+      font-weight: bold;
+      white-space: nowrap;
+    }
+    .reset-row input {
+      padding: 8px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    .reset-row button {
+      background: #4caf50;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+    .reset-row button:hover {
+      background: #45a049;
+    }
+
+    /* ─── CHAT HISTORY ────────────────────────────────────────────────────────── */
+    .history-list {
+      max-height: 400px;
+      overflow-y: auto;
+      border: 1px solid #ccc;
+      padding: 10px;
+      border-radius: 4px;
+      background: #fff;
+    }
+    .history-item {
+      margin-bottom: 10px;
+      padding: 8px;
+      border-radius: 4px;
+      background: #fafafa;
+    }
+    .history-item.user {
+      background-color: #e6e7e8;
+    }
+    .history-item.bot {
+      background-color: #e8f5e9;
+    }
+
+    /* ─── SETTINGS PANEL ──────────────────────────────────────────────────────── */
+    #settings {
+      padding-top: 10px;
+    }
+    #settings .form-grid {
+      grid-template-columns: max-content 1fr max-content;
+      gap: 10px 20px;
+      margin-bottom: 20px;
+    }
+    #settings input {
+      border: 1px solid #4caf50;
+    }
+    #settings button {
+      background: #4caf50;
+      color: #fff;
+      border: none;
+      padding: 8px 16px;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+    #settings button:hover {
+      background: #45a049;
+    }
+    /* Clear Chat gets a distinct red style */
+    #clear-history-btn {
+      background: #f44336 !important;
+    }
+    #clear-history-btn:hover {
+      background: #d32f2f !important;
+    }
+
+    .contact-modal {
+    display: none;
+    position: fixed;
+    z-index: 2000;
+    left: 0; top: 0;
+    width: 100%; height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+
+  .contact-modal-content {
+    background-color: white;
+    margin: 5% auto;
+    padding: 30px;
+    width: 90%;
+    max-width: 800px;
+    border-radius: 10px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .contact-title {
+    color: #4CAF50;
+    margin-bottom: 10px;
+    font-size: 22px;
+    text-align: center;
+  }
+
+  .contact-modal-content .close {
+    position: absolute;
+    top: -15px;
+    right: -15px;
+    width: 40px;
+    height: 40px;
+    background: #ff4444;
+    color: white;
+    border-radius: 50%;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    cursor: pointer;
+  }
+
+  .contact-modal-content .close:hover {
+    background-color: #c62828;
+    transform: scale(1.1);
+  }
+
+  #contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  #contact-form .form-row {
+    display: flex;
+    gap: 12px;
+  }
+
+  #contact-form .form-row input {
+    flex: 1;
+  }
+
+  #contact-form input,
+  #contact-form select,
+  #contact-form textarea {
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+  }
+
+  #contact-form input[readonly] {
+    background-color: #f0f0f0;
+    cursor: not-allowed;
+  }
+
+  #contact-form select {
+    background-color: white;
+  }
+
+  #contact-form textarea {
+    resize: vertical;
+    min-height: 100px;
+  }
+
+  #contact-form button {
+    background-color: #4CAF50;
+    color: white;
+    font-weight: bold;
+    border: none;
+    padding: 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+
+  #contact-form button:hover {
+    background-color: #3e8e41;
+  }
+    /* ─── RESPONSIVE ─────────────────────────────────────────────────────────── */
+    @media (max-width: 1024px) {
+      .dashboard-main {
+        flex-direction: column;
+      }
+      .dashboard-sidebar {
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-around;
+      }
+      .dashboard-content {
+        padding: 15px;
+      }
+      .reset-row {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(5, auto);
+      }
+      .reset-row button {
+        justify-self: start;
+      }
+      #settings .form-grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, auto);
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- ─── HEADER ───────────────────────────────────────────────────────────────── -->
+  <header class="dashboard-header">
+    <div class="header-logo">
+      <a href="index.html">
+        <img src="logo2.svg" alt="AgroChat Logo" />
+      </a>
+    </div>
+    <nav class="header-nav">
+      <button class="btn" onclick="location.href='index.html'">Home</button>
+      <button class="btn" onclick="location.href='weather.html'">WEATHER-MAP</button>
+      <!-- <button class="btn"><a href="weather.html">Weather-Map</a></button> -->
+      <!-- <button class="btn" onclick="location.href='mailto:info@myperfectsolution.in'">Contact</button> -->
+       <button class="btn" onclick="openContactForm()">Contact Expert</button>
+      <button id="logout-btn" class="btn">Logout</button>
+    </nav>
+  </header>
+
+  <!-- ─── MAIN LAYOUT ──────────────────────────────────────────────────────────── -->
+  <main class="dashboard-main">
+    <!-- ─ Sidebar with Profile & Navigation ─ -->
+    <aside class="dashboard-sidebar">
+      <div class="profile-widget">
+        <div class="avatar">
+          <img src="man.png" alt="Profile icon" />
+        </div>
+        <div id="user-name" class="profile-name"></div>
+      </div>
+      <ul class="sidebar-menu">
+        <li>
+          <button id="tab-profile" onclick="navigate('profile')" class="active">
+            <i class="fa-solid fa-user-circle"></i> Profile
+          </button>
+        </li>
+        <li>
+          <button id="tab-history" onclick="navigate('history')">
+            <i class="fa-solid fa-clock-rotate-left"></i> History
+          </button>
+        </li>
+        <li>
+          <button id="tab-settings" onclick="navigate('settings')">
+            <i class="fa-solid fa-cog"></i> Settings
+          </button>
+        </li>
+      </ul>
+    </aside>
+
+    <!-- ────────────────────────────────────────────────────────── -->
+    <section class="dashboard-content">
+      <!-- Profile Panel -->
+      <div id="profile" class="content-panel active">
+        <h2>Profile Information</h2>
+        <div class="form-grid">
+          <label>Username:</label>
+          <input type="text" id="profile-username" disabled />
+        </div>
+        <div class="form-grid">
+          <label>Email:</label>
+          <input type="email" id="profile-email" disabled />
+        </div>
+        <div class="reset-row">
+          <label>Reset Password:</label>
+          <input type="password" id="current-password" placeholder="Current Password" />
+          <input type="password" id="new-password" placeholder="New Password" />
+          <input type="password" id="confirm-password" placeholder="Confirm Password" />
+          <button id="reset-password-btn">Reset</button>
+        </div>
+      </div>
+
+      <!-- History Panel -->
+      <div id="history" class="content-panel">
+        <h2>Chat History</h2>
+        <div class="form-grid">
+          <label for="history-filter">Filter chats:</label>
+          <input type="text" id="history-filter" placeholder="Type to filter…" />
+          <span></span>
+        </div>
+        <div id="chat-history" class="history-list"></div>
+      </div>
+
+      <!-- Settings Panel -->
+      <div id="settings" class="content-panel">
+        <h2>Additional Settings</h2>
+        <!-- Change Username -->
+        <div class="form-grid">
+          <label for="new-username">Change username:</label>
+          <input type="text" id="new-username" placeholder="Enter new username…" />
+          <button id="change-username-btn">Update</button>
+        </div>
+        <!-- Change Email -->
+        <div class="form-grid">
+          <label for="new-email">Change email address:</label>
+          <input type="email" id="new-email" placeholder="Enter new email…" />
+          <button id="change-email-btn">Update</button>
+        </div>
+        <!-- Clear Chat History -->
+        <div class="form-grid">
+          <label>Chat setting:</label>
+          <span></span>
+          <button id="clear-history-btn">Clear Chat</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script>
+    // ──────────────────────────────────────────────────────────
+    function navigate(section) {
+      // Toggle active class on sidebar buttons and content panels
+      document.querySelectorAll('.sidebar-menu button').forEach((btn) =>
+        btn.classList.remove('active')
+      );
+      document.querySelectorAll('.content-panel').forEach((panel) =>
+        panel.classList.remove('active')
+      );
+      document.getElementById('tab-' + section).classList.add('active');
+      document.getElementById(section).classList.add('active');
+    }
+
+    // ───────────────────────────────────────────────
+    async function loadProfile() {
+      const res = await fetch('/api/user_info', { credentials: 'include' });
+      const { username, email } = await res.json();
+      document.getElementById('user-name').textContent = username;
+      document.getElementById('profile-username').value = username;
+      document.getElementById('profile-email').value = email;
+    }
+
+    async function loadHistory() {
+      const res = await fetch('/api/chat_history', { credentials: 'include' });
+      const { history } = await res.json();
+      const container = document.getElementById('chat-history');
+      container.innerHTML = '';
+      history.forEach((h) => {
+        const item = document.createElement('div');
+        item.className = `history-item ${h.sender}`;
+        item.textContent = (h.sender === 'user' ? 'You: ' : 'Bot: ') + h.message;
+        container.appendChild(item);
+      });
+    }
+
+    // ──────────────────────────────────────────────────────
+    const pwdRegex = /^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*#?&]).{8,}$/;
+
+    document.addEventListener('DOMContentLoaded', () => {
+      // Initial data load
+      loadProfile();
+      loadHistory();
+
+      // ─────────────────────────────────────────────────────────
+      document
+        .getElementById('reset-password-btn')
+        .addEventListener('click', async () => {
+          const current = document.getElementById('current-password').value;
+          const nw = document.getElementById('new-password').value;
+          const conf = document.getElementById('confirm-password').value;
+
+          // Basic validations
+          if (!current || !nw || !conf) {
+            return alert('All fields are required.');
+          }
+          if (nw !== conf) {
+            return alert('New passwords do not match.');
+          }
+          if (!pwdRegex.test(nw)) {
+            return alert(
+              'Password must be at least 8 characters and include a letter, a number & special character.'
+            );
+          }
+
+          // Submit change
+          const resp = await fetch('/api/reset_password', {
+            method: 'POST',
+            credentials: 'include',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ current_password: current, new_password: nw }),
+          });
+          const data = await resp.json();
+          alert(data.success ? 'Password updated.' : data.message || 'Update failed.');
+          if (data.success) {
+            ['current-password', 'new-password', 'confirm-password'].forEach((id) => {
+              document.getElementById(id).value = '';
+            });
+          }
+        });
+
+      // ────────────────────────────────────────────────────────
+      document
+        .getElementById('change-username-btn')
+        .addEventListener('click', async () => {
+          const u = document.getElementById('new-username').value.trim();
+          if (!u) return alert('Please enter a username.');
+          const res = await fetch('/api/change_username', {
+            method: 'POST',
+            credentials: 'include',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ new_username: u }),
+          });
+          const data = await res.json();
+          alert(data.success ? 'Username updated.' : data.message);
+          if (data.success) {
+            document.getElementById('new-username').value = '';
+            loadProfile();
+          }
+        });
+
+      // ───────────────────────────────────────────────────────────
+      document
+        .getElementById('change-email-btn')
+        .addEventListener('click', async () => {
+          const e = document.getElementById('new-email').value.trim();
+          if (!e) return alert('Please enter an email.');
+          const res = await fetch('/api/change_email', {
+            method: 'POST',
+            credentials: 'include',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ new_email: e }),
+          });
+          const data = await res.json();
+          alert(data.success ? 'Email updated.' : data.message);
+          if (data.success) {
+            document.getElementById('new-email').value = '';
+            loadProfile();
+          }
+        });
+
+      // ─────────────────────────────────────────────────────
+      document
+        .getElementById('clear-history-btn')
+        .addEventListener('click', async () => {
+          if (!confirm('Clear your chat history?')) return;
+          const res = await fetch('/api/clear_history', {
+            method: 'POST',
+            credentials: 'include',
+          });
+          const data = await res.json();
+          alert(data.success ? 'History cleared.' : 'Failed to clear.');
+          if (data.success) loadHistory();
+        });
+
+      // ────────────────────────────────────────────────────────────────
+      document.getElementById('logout-btn').addEventListener('click', async () => {
+        if (confirm('Logout?')) {
+          await fetch('/api/logout', { credentials: 'include' });
+          window.location.href = '/';
+        }
+      });
+
+      // ────────────────────────────────────────────────────
+      document.getElementById('history-filter').addEventListener('input', (e) => {
+        const term = e.target.value.toLowerCase();
+        document.querySelectorAll('#chat-history .history-item').forEach((div) => {
+          div.style.display = div.textContent.toLowerCase().includes(term)
+            ? ''
+            : 'none';
+        });
+      });
+    });
+  </script>
+  <script src="script.js"></script>
+  <div id="contact-popup" class="contact-modal">
+  <div class="contact-modal-content">
+    <span class="close" onclick="closeContactForm()">&times;</span>
+    <h2 class="contact-title">Contact Us</h2>
+                <form id="contact-form" action="/contact" method="post">
+            <div class="form-row">
+                <input type="text" id="contact-name" name="name" placeholder="Your Name" required>
+                <input type="text" id="contact-phone" name="phone" placeholder="Phone Number" required pattern="^[0-9]{10}$">
+            </div>
+
+            <!-- Pre-filled from user_info -->
+            <input type="email" id="contact-email" name="email" placeholder="Email" readonly>
+
+            <select id="contact-topic" name="subject" required>
+                <option value="" disabled selected>Select topic</option>
+                <option value="Crops related query">Crops related query</option>
+                <option value="Rainfall related query">Rainfall related query</option>
+                <option value="Want expert advice">Want expert advice</option>
+            </select>
+
+            <textarea id="contact-message" name="message" placeholder="Your message." rows="4" required></textarea>
+            <button type="submit">Send</button>
+            </form>
+  </div>
+</div>
+</body>
+</html>
